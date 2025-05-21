@@ -377,7 +377,7 @@ class Iptables:
                         return table_names.splitlines()
                     else:
                         return self.TABLES
-
+        return []
     # If /etc/debian_version exist, this means this is a debian based OS (Ubuntu, Mint, etc...)
     def _is_debian(self):
         return os.path.isfile('/etc/debian_version')
